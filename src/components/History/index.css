@@ -1,0 +1,34 @@
+.his_container {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem;
+  gap: 1rem;
+  line-height: 2.5rem;
+}
+@media screen and (max-width: 600px) {
+  .his_container {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1224px) {
+  .his_container {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 0.5rem;
+  }
+}

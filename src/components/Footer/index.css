@@ -1,0 +1,94 @@
+.f_container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.f_container > .left {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.input {
+  padding: 1rem;
+  width: 35vw;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.small_box {
+  height: 2rem;
+}
+label {
+  margin-left: -2rem;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.send_email {
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+  background-color: #fff;
+  transition: all 1s ease;
+}
+.send_email:hover {
+  background-color: var(--color-bg);
+}
+
+.f_right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.f_right > img {
+  width: 20rem;
+  height: auto;
+  border-radius: 15px;
+}
+
+.cpyr {
+  margin-bottom: 60px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 750px) {
+  .f_container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .f_container > .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .input {
+    width: 70vw;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+  .f_right > img {
+    margin-top: 0;
+  }
+  .cpyr {
+    font-size: 1.5rem;
+  }
+}

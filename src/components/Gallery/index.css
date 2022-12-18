@@ -1,0 +1,53 @@
+.gal_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 80vw;
+}
+.i_con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.i_con > img {
+  width: 50rem;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: rgb(16, 6, 89) !important;
+}
+
+@media screen and (max-width: 480px) {
+  .gal_container {
+    height: 30vh;
+    margin-bottom: 20px;
+  }
+  .i_con > img {
+    width: 5rem;
+    margin-top: 1rem;
+    overflow: hidden;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 780px) {
+  .gal_container {
+    height: 50vh;
+    margin-bottom: 30px;
+  }
+  .i_con > img {
+    width: 30rem;
+    margin-top: 1rem;
+    overflow: hidden;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+}

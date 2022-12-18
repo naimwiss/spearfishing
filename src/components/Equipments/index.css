@@ -1,0 +1,22 @@
+#equipments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 3rem;
+  box-shadow: 5px 5px 5px rgba(162, 157, 157, 0.989);
+}
+
+.equ_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 1px solid var(--color-dark);
+  border-radius: 10px;
+}
+.equ_container > img {
+  width: 12rem;
+}
