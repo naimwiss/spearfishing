@@ -1,10 +1,11 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './index.css';
 import emailjs from '@emailjs/browser';
 
 const Footer = () => {
   const form = useRef();
 
+  // console.log(send);
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -24,6 +25,11 @@ const Footer = () => {
         }
       );
   };
+  const [sendS, SetSendS] = useState('Send a message ');
+
+  function handleClick() {
+    SetSendS('Send Successfully');
+  }
 
   return (
     <div className="con">
@@ -51,7 +57,9 @@ const Footer = () => {
             rows="10"
             placeholder="Write a Message!"
           ></textarea>
-          <input type="submit" className="send_email" value="Send a message" />
+          <div className="send" onClick={handleClick}>
+            <input type="submit" className="send_email" value={sendS} />
+          </div>
         </form>
         <div className="f_right">
           <img
@@ -65,7 +73,7 @@ const Footer = () => {
           Copy Right <strong>2022</strong>
         </span>
         <span>
-          Ceuta, <strong>Spain</strong>
+          Rabat, <strong>Morocco</strong>
         </span>
       </div>
     </div>
